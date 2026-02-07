@@ -5,8 +5,6 @@
 #include <thread>
 #include <vector>
 
-
-
 int CountPhysicalCores()
 {
 	DWORD length = 0;
@@ -81,10 +79,10 @@ void PrintCUPUInformation() {
 	unsigned int logicalCores = std::thread::hardware_concurrency();
 
 	std::cout << "Physical Cores: " << physicalCores << std::endl;
-	std::cout << "Local Processors: " << logicalCores << std::endl;
+	std::cout << "Logical Processors: " << logicalCores << std::endl;
 
 	//virtual machine logic here
-	if (IsVirtualMachine)
+	if (IsVirtualMachine())
 	{
 		std::cout << "Environment virtual machine" << std::endl;
 	}
@@ -93,8 +91,7 @@ void PrintCUPUInformation() {
 	}
 	
 	//Get the number of hardware threads (logical processors)
-	unsigned int numThreads = std::thread::hardware_concurrency();
-	std::cout << "Number of Hardware Threads (Logical Processors)" << std::endl;
+	unsigned int numThreads = logicalCores;
 	
 	if (numThreads == 0)
 	{
@@ -110,7 +107,7 @@ void PrintCUPUInformation() {
 	switch (sysInfo.wProcessorArchitecture) 
 	{
 	case PROCESSOR_ARCHITECTURE_AMD64:
-		std::cout << "Processor Architecture x64 (AMR or INTEL)" << std::endl;
+		std::cout << "Processor Architecture x64 (AMD or INTEL)" << std::endl;
 		break;
 
 	case PROCESSOR_ARCHITECTURE_ARM:
@@ -126,7 +123,7 @@ void PrintCUPUInformation() {
 		break;
 	}
 
-	std::cout << "Number of Physical Processors (Windows view): " << sysInfo.dwNumberOfProcessors << std::endl;
+	std::cout << "Number of Logical Processors (Windows view): " << sysInfo.dwNumberOfProcessors << std::endl;
 
 }
 
