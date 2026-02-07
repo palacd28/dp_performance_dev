@@ -139,6 +139,8 @@
   <ItemGroup>
     <ClInclude Include="benchmark.h" />
     <ClInclude Include="CPU_Info.h" />
+    <ClInclude Include="Disk_info.h" />
+    <ClInclude Include="GPU_info.h" />
     <ClInclude Include="Mem_info.h" />
     <ClInclude Include="system_info.h" />
   </ItemGroup>

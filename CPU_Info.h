@@ -1,5 +1,5 @@
 #pragma once
 
-void PrintCUPUInformation();
+void PrintCPUInformation();
 bool IsVirtualMachine();
 int CountPhysicalCores();

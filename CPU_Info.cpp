@@ -73,7 +73,7 @@ bool IsVirtualMachine()
 }
 
 //I wont have the main function here, but I will have a function that gathers CPU information and prints it out.
-void PrintCUPUInformation() {
+void PrintCPUInformation() {
 
 	DWORD physicalCores = CountPhysicalCores();
 	unsigned int logicalCores = std::thread::hardware_concurrency();
