@@ -50,5 +50,8 @@
     <ClInclude Include="CPU_Info.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Mem_info.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

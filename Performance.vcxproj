@@ -139,6 +139,7 @@
   <ItemGroup>
     <ClInclude Include="benchmark.h" />
     <ClInclude Include="CPU_Info.h" />
+    <ClInclude Include="Mem_info.h" />
     <ClInclude Include="system_info.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
