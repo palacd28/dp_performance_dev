@@ -1,0 +1,11 @@
+﻿  Benchmark.cpp
+  CPU_Info.cpp
+C:\Users\palac\source\repos\Performance\Performance\CPU_Info.cpp(87,6): warning C4551: function call missing argument list
+  CSV_Writer.cpp
+  Disk_Info.cpp
+  GPU_Info.cpp
+  Mem_Info.cpp
+  Performance.cpp
+  System_Info.cpp
+  Generating Code...
+  Performance.vcxproj -> C:\Users\palac\source\repos\Performance\x64\Debug\Performance.exe
